@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #f4f4f9; /* 浅灰色背景 */
+        }
+        .main {
+            margin: 10px auto;
+            background-color: #ffffff; /* 白色背景 */
+            width: 700px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+            border-radius: 15px; /* 圆角 */
+        }
+        .info-label {
+            width: 120px; /* 宽度 */
+            color: #333333; /* 深灰色文字 */
+            font-weight: bold; /* 加粗 */
+            display: flex; /* 使用弹性盒子布局 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 12px;
+            padding: 8px;
+            border-bottom: 1px dashed #dddddd; /* 浅灰色虚线 */
+        }
+        .info-content:hover {
+            transform-origin: right bottom;
+            transform: translateX(40px) scale(1.2) rotate(15deg) ;
+        }
+        .section {
+            margin-bottom: 25px;
+            background-color: #fafafa; /* 更浅的灰色背景 */
+            border-radius: 15px; /* 圆角 */
+            padding: 15px; /* 内边距 */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* 内阴影 */
+        }
+        .section:hover {
+            transform-origin: left bottom; /* 每块div */
+            transform: scale(1.02); /* 缩放效果 */
+        }
+        h2 {
+            color: #333333; /* 深灰色文字 */
+        }
+        h2:hover {
+            transform: translateX(40px); /* 向右平移40px */
+            color: #55aaff; /* 鼠标悬停时蓝色文字 */
+        }
+        i:hover {
+            transform: rotate(20deg); /* 图标放大 */
+            color: #ff6347; /* 鼠标悬停时番茄红文字 */
+        }
+        i {
+            color: #55aaff; /* 蓝色图标 */
+        }
+        .profile-picture {
+            float: right;
+            margin-left: 20px;
+            width: 120px;
+            height: 150px;
+            border-radius: 10px; /* 圆角 */
+            overflow: hidden;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .basic-info {
+            overflow: hidden; /* 清除浮动影响 */
+        }
+        li {
+            padding-left: 30px;
+            color: #333333; /* 深灰色文字 */
+        }
+        p {
+            color: #333333; /* 深灰色文字 */
+            line-height: 1.6; /* 行间距 */
+        }
+        .self-intro {
+            margin-top: 15px;
+        }
+        .highlight {
+            color: #ff6347; /* 番茄红色突出显示 */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section basic-info">
+            <h2><i class="fas fa-user"></i> 基本信息</h2>
+            
+            <div class="profile-picture">
+                <img src="./2.jpg" alt="Profile Picture"> <!-- 添加alt属性以提高可访问性 -->
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-signature"></i>姓名
+                </div>
+                <div class="info-content">王瑞阳</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-venus-mars"></i>性别/年龄
+                </div>
+                <div class="info-content">男 / 19岁</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-map-marker-alt"></i>籍贯
+                </div>
+                <div class="info-content">山东齐河</div>
+            </div>
+        </div>
+        
+        <!-- 联系方式 -->
+        <div class="section">
+            <h2><i class="fas fa-address-book"></i> 联系方式</h2>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-phone"></i>电话
+                </div>
+                <div class="info-content">17861857513</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-envelope"></i>邮箱
+                </div>
+                <div class="info-content">2012307227@qq.com</div>
+            </div>
+        </div>
+        
+        <!-- 教育背景 -->
+        <div class="section">
+            <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-user-graduate"></i>学历
+                </div>
+                <div class="info-content">高中</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-book"></i>专业
+                </div>
+                <div class="info-content">软件工程</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-university"></i>毕业院校
+                </div>
+                <div class="info-content">烟台理工学院</div>
+            </div>
+        </div>
+        
+        <!-- 求职信息 -->
+        <div class="section">
+            <h2><i class="fas fa-briefcase"></i> 求职意向</h2>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-bullseye"></i>目标职位
+                </div>
+                <div class="info-content highlight">CEO</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">
+                    <i class="fas fa-certificate"></i>技能证书
+                </div>
+                <div class="info-content">软件工程师</div>
+            </div>
+        </div>
+        
+        <!-- 项目经历 -->
+        <div class="section">
+            <h2><i class="fas fa-project-diagram"></i> 项目经历</h2>
+            <div class="project-list">
+                <p><i class="fas fa-tasks"></i> 大学生创新创业比赛</p>
+                <p><i class="fas fa-tasks"></i> 智能图书管理系统</p>
+            </div>
+        </div>
+        
+        <!-- 自我评价 -->
+        <div class="section">
+            <h2><i class="fas fa-comment-dots"></i> 自我评价</h2>
+            <p class="self-intro">
+                <i class="fas fa-quote-left"></i>
+                我是一个积极向上、责任心强的人，做事认真细致，注重效率和质量。在工作中，我善于团队合作，能够与同事良好沟通，共同解决问题。同时，我也具备较强的学习能力，愿意接受新挑战，并不断提升自己的专业技能。在面对困难时，我保持冷静，能够理性分析问题并找到解决方案。生活中，我乐观开朗，待人真诚，乐于帮助他人，注重平衡工作与生活。当然，我也清楚自己还有很多需要改进的地方，比如有时会过于追求完美，导致效率降低。未来，我会继续努力，提升自己的综合能力，追求更好的自我。
+                <i class="fas fa-quote-right"></i>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
